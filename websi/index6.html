@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalBiz Growth Solution</title>
+    <link rel="stylesheet" href="index6.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="LocalBiz Growth Solution Logo" width="120">
+        <h1>LocalBiz Growth Solution</h1>
+        <p>Helping Local Businesses Grow with Smart Digital Strategies</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We help local businesses enhance their digital presence, attract more customers, and increase revenue with SEO, social media management, and marketing strategies.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>Local SEO Optimization:</strong> Google My Business, keyword research, and citations.</li>
+            <li><strong>Social Media Growth:</strong> Profile optimization, content strategy, and paid ads.</li>
+            <li><strong>Website Optimization:</strong> Site audit, content marketing, and CRO.</li>
+            <li><strong>Business Growth Consultation:</strong> Market research and personalized strategies.</li>
+        </ul>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Starter Package</h3>
+                <p>Basic SEO & Social Media Setup</p>
+            </div>
+            <div class="pricing-card">
+                <h3>Growth Package</h3>
+                <p>SEO, Social Media & Ads</p>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium Package</h3>
+                <p>Full Digital Growth Strategy</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:sriram.sgc994@gmail.com">sriram.sgc994@gmail.com</a></p>
+        <p>Location: Tirunelveli, India</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LocalBiz Growth Solution. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll("section");
+        
+            function revealOnScroll() {
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    const triggerHeight = window.innerHeight - 100;
+        
+                    if (sectionTop < triggerHeight) {
+                        section.classList.add("show-section");
+                    }
+                });
+            }
+        
+            window.addEventListener("scroll", revealOnScroll);
+            revealOnScroll(); // Run on page load
+        });
+        </script>
+
+</body>
+</html>
